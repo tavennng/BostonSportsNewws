@@ -1,4 +1,5 @@
 :root {
+  --backgroundimage-celtics: url("./images/celticslogo.jpg");
   --primary-color: #000000;        
   --secondary-color: #466362;      
   --accent-color: #343F3E;         
@@ -8,7 +9,7 @@
   --nav-link-current-bg: #000000;  
   --nav-link-current-color: #ffffff; 
   --nav-border-color: rgb(255, 0, 0);       
-
+}
 
 * {
   box-sizing: border-box;
@@ -66,4 +67,16 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.celtics {
+  background-image: var(--backgroundimage-celtics);
+  background-repeat: no-repeat;     /* prevents tiling */
+  background-size: cover;           /* fills the screen */
+  background-position: center;      /* centers the image */
+  background-attachment: fixed;     /* keeps it fixed while scrolling */
+}
+
+.patriots { 
+  display: flex;
 }
